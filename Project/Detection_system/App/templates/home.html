@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+<div style="height: auto; width: auto;" id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static "images/slide.jpg" %}"> <!-- Изображение от vecstock на Freepik (https://ru.freepik.com/free-photo/blestasii-metalliceskii-vint-dvigatela-vrasaetsa-v-masterskoi-sozdannoi-ii_41483767.htm#fromView=search&page=1&position=46&uuid=32a4fdb8-bfc0-4482-9384-944974b0c6bf) -->
+      <div class="carousel-caption d-none d-md-block">
+        <h4>Система для быстрого поиска дефектов лопаток компрессора авиадвигателей</h4>
+        <p>Предоставьте рутину технологиям машинного обучения. Сводите к минимуму расходы на
+          техническое обслуживание и ремонт и сокращайте время простоя воздушных судов без ухудшения безопасности полетов.
+          Данная система использует технологии искусственного интеллекта для автоматизации процесса дефектоскопии.
+          Загрузите фотографию через форму в личном кабинете и получите аннотированное изображение. Не забудьте сформировать отчет!</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

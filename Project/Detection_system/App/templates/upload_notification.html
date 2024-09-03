@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+<div class="outer-wrapper">
+  {% include "panel.html" %}
+  <div style="margin: 0;" class="alert alert-info" role="alert">
+    <p style="margin: 0;">{{ notification }}</p>
+  </div>
+  <div class="inner-wrapper">
+    <img src="data:image/png;base64, {{image_string}}">
+  </div>
+</div>
+{% endblock content %}

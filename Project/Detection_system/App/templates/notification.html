@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+<div>
+  {% include "panel.html" %}
+  <div style="margin: 0;" class="alert alert-info" role="alert">
+    <p style="margin: 0;">{{ notification }}</p>
+  </div>
+</div>
+{% endblock content %}
